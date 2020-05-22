@@ -6,11 +6,6 @@ services:
   container_name: tastyigniter
   ports:
   - "8001:80"
-  environment:
-  - MYSQL_HOSTNAME=db
-  - MYSQL_DATABASE=tastyigniter
-  - MYSQL_USER=tastyigniter
-  - MYSQL_PASSWORD=somepassword
   restart: always
  db:
   image: mariadb
