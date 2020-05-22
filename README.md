@@ -5,8 +5,14 @@ Run with docker compose for automatic database configuration
     curl -LO https://github.com/Robsgalaxy/TastyIgniter/raw/master/docker-compose.yml
     docker-compose up -d
 
-Browse to http://localhost:8001/setup.php of your docker host. The TastyIgniter setup wizard will show up. Wait for a minute for the database container to come up and then run the setu$
+Browse to http://localhost:8001/setup.php of your docker host. The TastyIgniter setup wizard will start up verifying all PHP modules are loaded before showing you the End-User License Agreement.
+- Accept license agreement
+- Enter database name as per docker-compose.yml file 
+- Enter hostname 'db'
+- Enter username and password as per docker-compose.yml file
+- Click on Administration
 
+Browse to http://localhost:8001/admin/
 
 Alternatively if you don't want to use docker compose you can run it manually
 
